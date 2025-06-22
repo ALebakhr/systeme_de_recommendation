@@ -64,3 +64,30 @@ Les modèles ont été évalués en utilisant les métriques RMSE (Root Mean Squ
 | NMF             | 0.915    | 0.722    |
 
 Les approches basées sur la factorisation de matrices (SVD en particulier) offrent les meilleures performances prédictives pour ce jeu de données.
+
+## Application Web (recommend_web.py)
+
+En plus du notebook, ce projet inclut une application web simple construite avec Flask. Cette application permet aux utilisateurs d'obtenir des recommandations de films de manière interactive en fonction de plusieurs critères.
+
+### Fonctionnalités
+
+- **Filtrage par genre** : Sélectionnez un ou plusieurs genres pour affiner les recommandations.
+- **Recherche par mots-clés** : Trouvez des films dont le titre contient des mots-clés spécifiques.
+- **Filtrage par année** : Spécifiez une plage d'années de sortie.
+- **Filtrage par note** : Définissez une note moyenne minimale.
+- **Filtrage par popularité** : Exigez un nombre minimum de notes.
+- **Affichage personnalisable** : Choisissez le nombre de recommandations à afficher.
+
+### Comment lancer l'application web
+
+1.  **Assurez-vous que les dépendances sont installées**, y compris Flask:
+    ```bash
+    pip install Flask pandas surprise
+    ```
+
+2.  **Exécutez le script `recommend_web.py`** depuis votre terminal :
+    ```bash
+    python recommend_web.py
+    ```
+
+3.  **Ouvrez votre navigateur** et accédez à l'adresse `http://127.0.0.1:5000` pour utiliser l'application.
